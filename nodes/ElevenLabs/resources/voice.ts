@@ -219,7 +219,7 @@ export const VoiceOperations: INodeProperties[] = [
 	{
 		displayName: 'Gender Name or ID',
 		description:
-			'The gender of the speaker. Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code-examples/expressions/">expression</a>.',
+			'The gender of the speaker. Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>.',
 		required: true,
 		name: 'gender',
 		type: 'options',
@@ -237,7 +237,7 @@ export const VoiceOperations: INodeProperties[] = [
 	{
 		displayName: 'Accent Name or ID',
 		description:
-			'The accent of the speaker. Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code-examples/expressions/">expression</a>.',
+			'The accent of the speaker. Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>.',
 		required: true,
 		name: 'accent',
 		type: 'options',
@@ -255,7 +255,7 @@ export const VoiceOperations: INodeProperties[] = [
 	{
 		displayName: 'Age Name or ID',
 		description:
-			'The age of the speaker. Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code-examples/expressions/">expression</a>.',
+			'The age of the speaker. Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>.',
 		required: true,
 		name: 'age',
 		type: 'options',

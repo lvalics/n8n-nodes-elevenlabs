@@ -22,7 +22,7 @@ export const SpeechOperations: INodeProperties[] = [
 			{
 				name: 'Text to Speech',
 				value: 'text-to-speech',
-				action: 'Text to Speech',
+				action: 'Text to speech',
 				description: 'Generate a speech from a text',
 				routing: {
 					send: {
@@ -33,7 +33,7 @@ export const SpeechOperations: INodeProperties[] = [
 			{
 				name: 'Voice changer',
 				value: 'voice-changer',
-				action: 'Voice changer',
+				action: 'Voice Changer',
 				description: 'Transform audio from one voice to another',
 				routing: {
 					send: {
@@ -340,7 +340,7 @@ export const SpeechOperations: INodeProperties[] = [
 		options: [
 			{
 				displayName: 'Binary Name',
-				description: 'Change the output binary name',
+				description: 'Change the output binary name.',
 				name: 'binary_name',
 				type: 'string',
 				default: 'data',
@@ -352,7 +352,7 @@ export const SpeechOperations: INodeProperties[] = [
 			},
 			{
 				displayName: 'File Name',
-				description: 'Change the output file name',
+				description: 'Change the output file name.',
 				name: 'file_name',
 				type: 'string',
 				default: 'voice',
@@ -365,7 +365,7 @@ export const SpeechOperations: INodeProperties[] = [
 			// optimize_streaming_latency
 			{
 				displayName: 'Streaming Latency',
-				description: 'Turn on latency optimizations at some cost of quality. Values: 0 (default - no optimizations), 1 (normal - 50% improvement), 2 (strong - 75% improvement), 3 (max), 4 (max with text normalizer off)',
+				description: 'Turn on latency optimizations at some cost of quality. Values: 0 (default - no optimizations), 1 (normal - 50% improvement), 2 (strong - 75% improvement), 3 (max), 4 (max with text normalizer off).',
 				name: 'optimize_streaming_latency',
 				type: 'number',
 				default: 0,
@@ -389,9 +389,9 @@ export const SpeechOperations: INodeProperties[] = [
 				options: [
 					{ name: 'MP3 (44.1kHz, 128kbps)', value: 'mp3_44100_128' },
 					{ name: 'MP3 (44.1kHz, 192kbps)', value: 'mp3_44100_192' },
-					{ name: 'PCM (16-bit, 44.1kHz)', value: 'pcm_16000' },
 					{ name: 'PCM (16-bit, 22.05kHz)', value: 'pcm_22050' },
 					{ name: 'PCM (16-bit, 24kHz)', value: 'pcm_24000' },
+					{ name: 'PCM (16-bit, 44.1kHz)', value: 'pcm_16000' },
 					{ name: 'PCM (24-bit, 44.1kHz)', value: 'pcm_24000_24' },
 					{ name: 'μ-law (8-bit, 8kHz)', value: 'ulaw_8000' },
 				],
@@ -405,7 +405,7 @@ export const SpeechOperations: INodeProperties[] = [
 			// language_code - New parameter from documentation
 			{
 				displayName: 'Language Code',
-				description: 'Language code (ISO 639-1) used to enforce a language for the model. IMPORTANT: Currently ONLY works with Turbo v2.5 and Flash v2.5 models!',
+				description: 'Language code (ISO 639-1) used to enforce a language for the model. IMPORTANT: Currently ONLY works with Turbo v2.5 and Flash v2.5 models!.',
 				name: 'language_code',
 				type: 'string',
 				default: '',
@@ -420,13 +420,13 @@ export const SpeechOperations: INodeProperties[] = [
 			{
 				displayName: 'Model Name or ID',
 				description:
-					'Identifier of the model that will be used. Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code-examples/expressions/">expression</a>.',
+					'Identifier of the model that will be used. Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>.',
 				name: 'model_id',
 				type: 'options',
 				typeOptions: {
 					loadOptionsMethod: 'listModels',
 				},
-				default: 'eleven_monolingual_v1',
+				default: '',
 				displayOptions: {
 					show: {
 						'/operation': ['text-to-speech'],
@@ -437,13 +437,13 @@ export const SpeechOperations: INodeProperties[] = [
 			{
 				displayName: 'Model Name or ID',
 				description:
-					'Identifier of the model that will be used. Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code-examples/expressions/">expression</a>.',
+					'Identifier of the model that will be used. Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>.',
 				name: 'model_id',
 				type: 'options',
 				typeOptions: {
 					loadOptionsMethod: 'listModels',
 				},
-				default: 'eleven_english_sts_v2',
+				default: '',
 				displayOptions: {
 					show: {
 						'/operation': ['voice-changer'],
@@ -715,7 +715,7 @@ export const SpeechOperations: INodeProperties[] = [
 			// Diarize
 			{
 				displayName: 'Speaker Diarization',
-				description: 'Whether to annotate which speaker is talking in the uploaded file',
+				description: 'Whether to annotate which speaker is talking in the uploaded file.',
 				name: 'diarize',
 				type: 'boolean',
 				default: false,
